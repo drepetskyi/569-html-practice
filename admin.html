@@ -20,8 +20,8 @@
             </ul>
             <div>
                 <select id="lang">
-                    <option> <img src="img/1200px-Flag_of_Ukraine.svg.png" alt="flagUA"> UA </option>
-                    <option> <img src="img/Flag_of_the_United_Kingdom.svg" alt="flagEN"> EN </option>
+                    <option> UA </option>
+                    <option> EN </option>
                 </select>
             </div>
         </nav>
@@ -30,7 +30,7 @@
 
     <main>
         <h1>Добавлення новин</h1>
-        <form action method="POST">
+        <form method="POST">
             <label>
                 <textarea name="zagolovok" id="zagolovok" cols="30" rows="10" placeholder="заголовок"></textarea>
             </label>
@@ -41,10 +41,8 @@
                 <p>додати фото</p>
                 <input type="file" name="photo" multiple accept="image/*,image/jpeg">
                 <br> <br>
-                <input type="submit" value="додати новину">
             </label>
-
-
+            <input type="submit" value="додати новину">
 
         </form>
 
