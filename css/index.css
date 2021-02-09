@@ -18,7 +18,7 @@ nav{
     height: 12vmin;
 }
 nav div a{
-    font-size: xx-large;
+    font-size: 1.7rem;
     text-decoration: none;
     color: black;
     width: 20%;
@@ -33,15 +33,87 @@ nav ul li a {
     text-decoration: none;
     width: 20%;
     color: black;
-    font-size: x-large;
+    font-size: 1.7rem;
 }
 #lang{
     border: white 1px solid;
     border-radius: 10px;
     background-color:rgb(252, 145, 163);
 }
-
-.yellow-line{height: 2px; width: 250px; position: absolute; 
+#lang-mob{
+    border: white 1px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.menu-adaptive{
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+.burger1{
+    height: 2px;
+    width: 30px;
+    background: black;
+    border-radius: 25px;
+}
+.burger2{
+    height: 2px;
+    width: 30px;
+    background: black;
+    margin-top: 4px;
+    border-radius: 25px;
+}
+.burger3{
+    height: 2px;
+    width: 30px;
+    background: black;
+    margin-top: 4px;
+    border-radius: 25px;
+}
+.adaptive{
+    display: none;
+}
+.close{
+    position: absolute; 
+    right: 5%; 
+    top: 50px;
+}
+.left{
+    height: 2px;
+    width: 20px; 
+    transform: rotate(45deg); 
+    background: grey; 
+    position: absolute; 
+    border-radius: 25px;
+}
+.right{
+    height: 2px; 
+    width: 20px; 
+    transform: rotate(-45deg); 
+    background: grey; 
+    border-radius: 25px;
+}
+.mob-menu{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.mob-menu div{
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(-110deg, rgb(252, 145, 163), rgb(222, 238, 247), white);
+}
+.mob-menu div div a{
+    line-height: 1.5;
+    text-decoration: none;
+    color: black;
+}
+.yellow-line{
+    height: 2px; 
+    width: 250px; 
+    position: absolute; 
     background: yellow;
     animation: ly;
     animation-duration: 5s;
@@ -50,6 +122,38 @@ nav ul li a {
 @keyframes ly{
     0% {left: 2%;}
     100% {left: 70%;}
+}
+
+/*style for header in phone*/
+@media only screen and (max-width: 1235px) {
+    .logo-img img{
+        display: none;
+    }
+    nav{
+       justify-content: flex-start;
+    }
+    nav ul{
+        display: none;
+    }
+    #lang{
+        display: none;
+    }
+    .menu-adaptive{
+        display: block;
+    }
+    .menu-adaptive:hover +.adaptive{
+        display: block;
+    }
+    .menu-adaptive:hover {
+        opacity: 0;
+    }    
+    .close-adaptive:hover +.adaptive{
+        display: none;
+    }    
+    .yellow-line {
+        display: block;
+        width: 50px; 
+    }
 }
 
 /* style for main in laptop */
@@ -67,7 +171,7 @@ article{
 }
 .img-for-news{
     margin: 2%;
-    height: 40vmin;
+    height: 40%;
     width: 35%;
 }
 .text-for-news{
@@ -80,7 +184,7 @@ article{
     font-size: 2em;
     margin-top: 1%;
     text-align: end;
-    color: #d657c1;
+    color: rgb(252, 145, 163);
     font-style: italic;
 }
 .part-start{
@@ -103,6 +207,24 @@ article{
     display: block;
     font-size: 2em;
     color: black;
+}
+/* style for main in phone */
+@media only screen and (max-width: 1235px) {
+    .card-news{
+        display: block;
+    }
+    .img-for-news{
+        width: 96%;
+    }
+    .headline{
+        font-size: 2em;
+    }
+    .heading{
+        font-size: 1em;
+    }
+    .part-start{
+        font-size: 1em;
+    }
 }
 
 /*style for comments*/
@@ -133,4 +255,10 @@ article{
 .main-footer a, .login a, .text-for-footer{
     text-decoration: none;
     color: lightgray;
+}
+/* style for footer in phone */
+@media only screen and (max-width: 1235px) {
+    .main-footer{
+        font-size: .8em;
+    }
 }

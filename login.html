@@ -4,44 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daway.news</title>
-    <link rel="icon" href="img/logos.png">
+    <title>daway.news</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/admin.css">
+
 </head>
 
-<header>
-    <nav>
-        <div> <a href="index.html">daway.news</a> </div>
-        <ul>
-            <li><a href="polityca.html">Політика</a></li>
-            <li><a href="finance.html">Фінанси</a></li>
-            <li><a href="sport.html">Спорт</a></li>
-        </ul>
-        <div>
-            <select id="lang">
-                <option> UA </option>
-                <option> EN </option>
-            </select>
-        </div>
-    </nav>
-
-</header>
-
-<main>
-    <form action="admin.html" method="POST">
-        <label>user
-            <input type="text" name="user" required>
-        </label>
-        <br>
-        <label>password
-            <input type="password" name="password" required>
-        </label>
-        <br>
-        <input value="увійти" type="submit">
-
-    </form>
-</main>
-
 <body>
+    <header>
+        <nav>
+            <div class="logo-img">
+                <img class="img-header" src="img/logo.png" alt="картинка для хедера">
+                <a href="index.html">daway.news</a>
+            </div>
+            <ul>
+                <li><a href="politics.html">Політика</a></li>
+                <li><a href="finance.html">Фінанси</a></li>
+                <li><a href="sport.html">Спорт</a></li>
+            </ul>
+            <div>
+                <select id="lang">
+                    <option> UA </option>
+                    <option> EN </option>
+                </select>
+            </div>
+        </nav>
+        <div class="yellow-line"></div>
+        <div class="menu-adaptive">
+            <div class="burger1"></div>
+            <div class="burger2"></div>
+            <div class="burger3"> </div>
+        </div>
+        <div class="adaptive">
+            <div class="close">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="mob-menu">
+                <div>
+                    <div><a href="politics.html">Політика</a></div>
+                    <div><a href="finance.html">Фінанси</a></div>
+                    <div><a href="sport.html">Спорт</a></div>
+                    <div>
+                        <select id="lang-mob">
+                            <option> UA </option>
+                            <option> EN </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <form action="admin.html" method="POST">
+            <br><br><br>
+            <label>
+                <input type="text" name="user" required placeholder="user">
+            </label>
+            <br><br>
+            <label>
+                <input type="password" name="password" required placeholder="password">
+            </label>
+            <br><br>
+            <input value="увійти" type="submit">
+
+        </form>
+    </main>
 
 </body>
 
