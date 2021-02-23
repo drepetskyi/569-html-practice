@@ -2,11 +2,25 @@
 <html lang="zxx">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188091603-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-188091603-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>daway.news</title>
+    <title>daway | Цікаві події | Новини | Корисні поради</title>
+    <meta name="description" content="Цікаві події, останні новинки, корисні поради, життя.">
+    <meta name="keywords" content="Цікаві події, останні новинки, корисні поради, життя, сьогодні" />
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,182 +31,76 @@
                 <a href="index.html">daway.news</a>
             </div>
             <ul>
-                <li><a href="politics.html">Політика</a></li>
-                <li><a href="finance.html">Фінанси</a></li>
-                <li><a href="sport.html">Спорт</a></li>
+                <li><a href="#">Політика</a></li>
+                <li><a href="#">Фінанси</a></li>
+                <li><a href="#">Спорт</a></li>
             </ul>
-            <div>
-                <select id="lang">
-                    <option> UA </option>
-                    <option> EN </option>
-                </select>
+            <div class="mob-menu">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primiry dropdown-toggle" data-bs-toggle="dropdown">
+                        menu
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button"><a href="#">політика</a></button>
+                        </li>
+                        <li><button class="dropdown-item" type="button"><a href="#">фінанси</a></button></li>
+                        <li><button class="dropdown-item" type="button"><a href="#">спорт</a></button></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="yellow-line"></div>
-        <div class="menu-adaptive">
-            <div class="burger1"></div>
-            <div class="burger2"></div>
-            <div class="burger3"> </div>
+        <div class="phrases">
+            <div class="phrase"></div>
         </div>
-        <div class="adaptive">
-            <div class="close">
-                <div class="left"></div>
-                <div class="right"></div>
-            </div>
-            <div class="mob-menu">
-                <div>
-                    <div><a href="politics.html">Політика</a></div>
-                    <div><a href="finance.html">Фінанси</a></div>
-                    <div><a href="sport.html">Спорт</a></div>
-                    <div>
-                        <select id="lang-mob">
-                            <option> UA </option>
-                            <option> EN </option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
+        <div class="date" id="date">dfff</div>
+    </header>  
 
     <main>
         <article>
             <div class="card-news">
-                <img class="img-for-news" src="img/1200px-Flag-of-Ukraine.png" alt="картинка для новини про фінанси">
                 <div class="text-for-news">
-                    <div class="headline">Важлива подія!!! Ого всяке таке!</div>
-                    <div class="heading">фінанси</div>
-                    <p class="part-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aliquid, cum
-                        nihil voluptas, sed
-                        nam eveniet enim hic itaque aut soluta? Odio commodi ad labore eos, esse adipisci facilis porro?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tenetur dolor dicta eaque nam
-                        exercitationem enim, commodi corrupti rem, accusantium ut incidunt minus laborum quod? Illum
-                        debitis cum incidunt neque.
-                    </p>
-                    <div class="more-hide">
-                        <h4 class="more-text"> <a href="#"> ...показати більше</a></h4>
-                        <h4 class="hide-text">...Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                            eligendi
-                            placeat vel consectetur
-                            ab fuga optio beatae ex pariatur repellat, sapiente error quos, corrupti minima architecto
-                            est
-                            iure,
-                            dignissimos sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum
-                            possimus provident, illo quaerat, nesciunt quidem, perspiciatis repudiandae sapiente
-                            consequuntur hic consequatur? Velit, soluta nisi repellendus voluptatem odit neque. Alias.
-                        </h4>
+                    <div class="part-one">
+                        <img class="img-for-news" src="img/macgregor-portie.png" alt="картинка про макгрегора">
+                        <div class="headline">&emsp; Конор Мак-Грегор знову побився з Дастіном Пуар'є, цього разу за
+                            титул
+                            тимчасового чемпіона UFC у легкій вазі (до 70,3 кг). <br> &emsp; Що завадило колишньому
+                            чемпіону
+                            у двох вагових категоріях стати ближче до завоювання трону в MMA?
+                            <div class="heading">спорт</div>
+                        </div>
                     </div>
-                    <div class="part-end"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi
-                        placeat vel consectetur
-                        ab fuga optio beatae ex pariatur repellat, sapiente error quos, corrupti minima architecto est
-                        iure,
-                        dignissimos sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum
-                        possimus provident, illo quaerat, nesciunt quidem, perspiciatis repudiandae sapiente
-                        consequuntur hic consequatur? Velit, soluta nisi repellendus voluptatem odit neque. Alias.
+                    <div id="fb-root"></div>
+                    <p class="part-start">&emsp; &emsp; Перший вагомий поєдинок цього року за участі одних із
+                        найяскравіших зірок UFC відбувся в ніч з 23 на 24 січня в Абу-Дабі в ОАЕ. Пуар'є (27-6) та
+                        Мак-Грегор (22-5)
+                        зустрічались вже раніше - 7 років тому у першому раунді Конор нокаутував Дастіна. Реванш та
+                        перемоги в останніх боях обидвох
+                        суперників суттєво підігрівали інтерес до поєдинку. Насправді поєдинок виявився насиченим та
+                        цікавим. <br>
+                        &emsp; &emsp; В першому раунді бійці обмінювались джебами, було небагато боротьби і однозначну
+                        перевагу не можна
+                        було віддати тому чи іншому, проте вже з початку другого раунда Мак-Грегор виглядав менш
+                        мотивованим, принаймні
+                        далекий від своєї "ідеальної версії" - того Конора, якого ми звикли бачити. <br> &emsp;
+                        &emsp;Другий раунд -
+                        Пуар'є отримав заслужений шанс в протистоянні з Мак-Грегором, і Дастін його використав. Він не
+                        тільки постійно
+                        "напрягав" суперника лоу-кіками й демонстрував витривалість після ударів Конора, але вчасно
+                        відповідав серіями джебів
+                        на його атаки, одна із таких серій завершилась підкошенням Конора, що не одразу вірилося
+                        глядачам,
+                        оскільки після пропущених ударів, краще було б перевести бій в боротьбу, або спробувати відійти
+                        на
+                        безпечну дистанцію, трохи "відійти", але цього не сталось - ще два удари і колишній чемпіон в
+                        нокауті.
+                        <br> &emsp; &emsp; Очікуємо нових поворотів в ММА у 2021 році.
+                    </p>
+                    <div class="published" pub="2-21-2021"> Опубліковано
                     </div>
                 </div>
             </div>
-            <div class="comments">
-                <div class="comments-line">Коментарі</div>
-                <form method="POST">
-                    <textarea name="your-coment" cols="30" rows="2" placeholder="напиши шось..." required></textarea>
-                    <br>
-                    <input type="submit" value="Відправити">
-                </form>
-            </div>
-        </article>
-
-        <article>
-            <div class="card-news">
-                <img class="img-for-news" src="img/politics.png" alt="картинка для новини про політику">
-                <div class="text-for-news">
-                    <div class="headline">Політична ситуація вражає, навколо події великий антураж!</div>
-                    <div class="heading">політика</div>
-                    <p class="part-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aliquid, cum
-                        nihil voluptas, sed
-                        nam eveniet enim hic itaque aut soluta? Odio commodi ad labore eos, esse adipisci facilis porro?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tenetur dolor dicta eaque nam
-                        exercitationem enim, commodi corrupti rem, accusantium ut incidunt minus laborum quod? Illum
-                        debitis cum incidunt neque.
-                    </p>
-                    <div class="more-hide">
-                        <h4 class="more-text"> <a href="#"> ...показати більше</a></h4>
-                        <h4 class="hide-text">...Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                            eligendi
-                            placeat vel consectetur
-                            ab fuga optio beatae ex pariatur repellat, sapiente error quos, corrupti minima architecto
-                            est
-                            iure,
-                            dignissimos sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum
-                            possimus provident, illo quaerat, nesciunt quidem, perspiciatis repudiandae sapiente
-                            consequuntur hic consequatur? Velit, soluta nisi repellendus voluptatem odit neque. Alias.
-                        </h4>
-                    </div>
-                    <div class="part-end"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi
-                        placeat vel consectetur
-                        ab fuga optio beatae ex pariatur repellat, sapiente error quos, corrupti minima architecto est
-                        iure,
-                        dignissimos sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum
-                        possimus provident, illo quaerat, nesciunt quidem, perspiciatis repudiandae sapiente
-                        consequuntur hic consequatur? Velit, soluta nisi repellendus voluptatem odit neque. Alias.
-                    </div>
-                </div>
-            </div>
-            <div class="comments">
-                <div class="comments-line">Коментарі</div>
-                <form method="POST">
-                    <textarea name="your-coment" cols="30" rows="2" placeholder="напиши шось..." required></textarea>
-                    <br>
-                    <input type="submit" value="Відправити">
-                </form>
-            </div>
-        </article>
-
-        <article>
-            <div class="card-news">
-                <img class="img-for-news" src="img/macgregor-portie.png" alt="картинка для новини про спорт">
-                <div class="text-for-news">
-                    <div class="headline">Світ спроту шоковала зустріч цих хлопців...</div>
-                    <div class="heading">спорт</div>
-                    <p class="part-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aliquid, cum
-                        nihil voluptas, sed
-                        nam eveniet enim hic itaque aut soluta? Odio commodi ad labore eos, esse adipisci facilis porro?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tenetur dolor dicta eaque nam
-                        exercitationem enim, commodi corrupti rem, accusantium ut incidunt minus laborum quod? Illum
-                        debitis cum incidunt neque.
-                    </p>
-                    <div class="more-hide">
-                        <h4 class="more-text"> <a href="#"> ...показати більше</a></h4>
-                        <h4 class="hide-text">...Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                            eligendi
-                            placeat vel consectetur
-                            ab fuga optio beatae ex pariatur repellat, sapiente error quos, corrupti minima architecto
-                            est
-                            iure,
-                            dignissimos sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum
-                            possimus provident, illo quaerat, nesciunt quidem, perspiciatis repudiandae sapiente
-                            consequuntur hic consequatur? Velit, soluta nisi repellendus voluptatem odit neque. Alias.
-                        </h4>
-                    </div>
-                    <div class="part-end"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi
-                        placeat vel consectetur
-                        ab fuga optio beatae ex pariatur repellat, sapiente error quos, corrupti minima architecto est
-                        iure,
-                        dignissimos sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum
-                        possimus provident, illo quaerat, nesciunt quidem, perspiciatis repudiandae sapiente
-                        consequuntur hic consequatur? Velit, soluta nisi repellendus voluptatem odit neque. Alias.
-                    </div>
-                </div>
-            </div>
-            <div class="comments">
-                <div class="comments-line">Коментарі</div>
-                <form method="POST">
-                    <textarea name="your-coment" cols="30" rows="2" placeholder="напиши шось..." required></textarea>
-                    <br>
-                    <input type="submit" value="Відправити">
-                </form>
-            </div>
+            <div class="fb-comments" data-href="https://daway.com.ua" data-width="100%" data-numposts="1"></div>
         </article>
 
     </main>
@@ -202,9 +110,24 @@
         <div class="text-for-footer"> created by D&A.way
         </div>
         <div class="login">
-            <a href="login.html">login</a>
+            <a href="#">login</a>
         </div>
     </footer>
+
+    <script src="js/index.js"></script>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-4c91a91a-96f2-48db-9d46-d2bc5e81f747"></div>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v9.0"
+        nonce="oHLQeBvl"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
 
 </body>
 

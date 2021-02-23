@@ -35,80 +35,23 @@ nav ul li a {
     color: black;
     font-size: 1.7rem;
 }
-#lang{
-    border: white 1px solid;
-    border-radius: 10px;
-    background-color:rgb(252, 145, 163);
-}
-#lang-mob{
-    border: white 1px solid;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.menu-adaptive{
-    position: absolute;
-    right: 5%;
-    top: 15px;
-    display: none;
-}
-.burger1{
-    height: 2px;
-    width: 30px;
-    background: black;
-    border-radius: 25px;
-}
-.burger2{
-    height: 2px;
-    width: 30px;
-    background: black;
-    margin-top: 4px;
-    border-radius: 25px;
-}
-.burger3{
-    height: 2px;
-    width: 30px;
-    background: black;
-    margin-top: 4px;
-    border-radius: 25px;
-}
-.adaptive{
-    display: none;
-}
-.close{
-    position: absolute; 
-    right: 5%; 
-    top: 50px;
-}
-.left{
-    height: 2px;
-    width: 20px; 
-    transform: rotate(45deg); 
-    background: grey; 
-    position: absolute; 
-    border-radius: 25px;
-}
-.right{
-    height: 2px; 
-    width: 20px; 
-    transform: rotate(-45deg); 
-    background: grey; 
-    border-radius: 25px;
-}
 .mob-menu{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    display: none;
 }
-.mob-menu div{
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(-110deg, rgb(252, 145, 163), rgb(222, 238, 247), white);
+
+.btn{
+    box-shadow: none !important;
 }
-.mob-menu div div a{
-    line-height: 1.5;
-    text-decoration: none;
+.dropdown-toggle::after{
+    display: none !important;
+}
+.dropdown-menu{
+    border: none !important;
+    opacity: .8;
+}
+.dropdown-item a{
     color: black;
+    font-size: 1.5rem;
 }
 .yellow-line{
     height: 2px; 
@@ -118,7 +61,12 @@ nav ul li a {
     animation: ly;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-}  
+} 
+.date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+} 
 @keyframes ly{
     0% {left: 2%;}
     100% {left: 70%;}
@@ -130,29 +78,20 @@ nav ul li a {
         display: none;
     }
     nav{
-       justify-content: flex-start;
+       justify-content: space-between;
     }
     nav ul{
         display: none;
     }
-    #lang{
-        display: none;
-    }
-    .menu-adaptive{
+    .mob-menu{
         display: block;
     }
-    .menu-adaptive:hover +.adaptive{
-        display: block;
-    }
-    .menu-adaptive:hover {
-        opacity: 0;
-    }    
-    .close-adaptive:hover +.adaptive{
-        display: none;
-    }    
     .yellow-line {
         display: block;
         width: 50px; 
+    }
+    .date{
+        font-size: small;
     }
 }
 
@@ -169,6 +108,9 @@ article{
     display: flex;
     justify-content: start;
 }
+.part-one{
+    display: flex;
+}
 .img-for-news{
     margin: 2%;
     height: 40%;
@@ -178,69 +120,49 @@ article{
     margin: 2%;
 }
 .headline{
-    font-size: 5em;
+    font-size: 2em;
 }
 .heading{
-    font-size: 2em;
+    font-size: .8em;
     margin-top: 1%;
     text-align: end;
     color: rgb(252, 145, 163);
     font-style: italic;
 }
 .part-start{
-    font-size: 2em;
+    font-size: 1.4em;
 }
-.more-hide{
-    display: block;
+.published{
+    color: gray;
 }
-.more-text a{
-    text-decoration: none;
-}
-.hide-text{
-    display: none;
-}
-.part-end{
-    display: none;
-    font-size: 2em;
-}
-.more-text:hover + .hide-text {
-    display: block;
-    font-size: 2em;
-    color: black;
-}
+
 /* style for main in phone */
 @media only screen and (max-width: 1235px) {
     .card-news{
         display: block;
     }
+    .part-one{
+        display: block;
+    }   
     .img-for-news{
         width: 96%;
     }
     .headline{
-        font-size: 2em;
+        font-size: 1em;
+        font-weight: bold;
     }
     .heading{
-        font-size: 1em;
+        font-size: 0.7em;
     }
     .part-start{
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+    .published{
+        font-size: 0.65em;
     }
 }
 
 /*style for comments*/
-.comments{
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-}
-.comments-line{
-    padding: 10px;
-    border-top: gray 1px solid;
-}
-.comments form textarea {
-    border: 1px solid gray;
-    width: 100%;
-}
 
 /* style for footer*/
 .main-footer{
@@ -260,5 +182,29 @@ article{
 @media only screen and (max-width: 1235px) {
     .main-footer{
         font-size: .8em;
+    }
+}
+.eapps-widget-toolbar-panel-share-block{
+    display: none !important;
+}
+.phrases{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    justify-content: flex-end;
+}
+.phrase{
+    font-size: large;
+    text-align: right;
+}
+
+/* style for phrases */
+@media only screen and (max-width: 1235px) {
+    .phrase{
+        font-size: .6rem;
+        
     }
 }
