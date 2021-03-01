@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188091603-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-188091603-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>daway.news</title>
+    <title>daway | Цікаві події | Новини | Корисні поради</title>
+    <meta name="description" content="Цікаві події, останні новинки, корисні поради, життя.">
+    <meta name="keywords" content="Цікаві події, останні новинки, корисні поради, життя, сьогодні" />
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,90 +31,31 @@
                 <a href="index.html">daway.news</a>
             </div>
             <ul>
-                <li><a href="politics.html">Політика</a></li>
+                <li><a class = "politycs" href="politics.html">Політика</a></li>
                 <li><a href="finance.html">Фінанси</a></li>
                 <li><a href="sport.html">Спорт</a></li>
             </ul>
-            <div>
-                <select id="lang">
-                    <option> UA </option>
-                    <option> EN </option>
-                </select>
+            <div class="mob-menu">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primiry dropdown-toggle" data-bs-toggle="dropdown">
+                        menu
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button"><a href="politics.html">політика</a></button>
+                        </li>
+                        <li><button class="dropdown-item" type="button"><a href="finance.html">фінанси</a></button></li>
+                        <li><button class="dropdown-item" type="button"><a href="sport.html">спорт</a></button></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="yellow-line"></div>
-        <div class="menu-adaptive">
-            <div class="burger1"></div>
-            <div class="burger2"></div>
-            <div class="burger3"> </div>
-        </div>
-        <div class="adaptive">
-            <div class="close">
-                <div class="left"></div>
-                <div class="right"></div>
-            </div>
-            <div class="mob-menu">
-                <div>
-                    <div><a href="politics.html">Політика</a></div>
-                    <div><a href="finance.html">Фінанси</a></div>
-                    <div><a href="sport.html">Спорт</a></div>
-                    <div>
-                        <select id="lang-mob">
-                            <option> UA </option>
-                            <option> EN </option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
+        <div class="phrases"></div>
+        <div class="date" id="date"></div>
+    </header>  
 
     <main>
-        <article>
-            <div class="card-news">
-                <img class="img-for-news" src="img/politics.png" alt="картинка для новини про політику">
-                <div class="text-for-news">
-                    <div class="headline">Політична ситуація вражає, навколо події великий антураж!</div>
-                    <div class="heading">політика</div>
-                    <p class="part-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aliquid, cum
-                        nihil voluptas, sed
-                        nam eveniet enim hic itaque aut soluta? Odio commodi ad labore eos, esse adipisci facilis porro?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tenetur dolor dicta eaque nam
-                        exercitationem enim, commodi corrupti rem, accusantium ut incidunt minus laborum quod? Illum
-                        debitis cum incidunt neque.
-                    </p>
-                    <div class="more-hide">
-                        <h4 class="more-text"> <a href="#"> ...показати більше</a></h4>
-                        <h4 class="hide-text">...Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                            eligendi
-                            placeat vel consectetur
-                            ab fuga optio beatae ex pariatur repellat, sapiente error quos, corrupti minima architecto
-                            est
-                            iure,
-                            dignissimos sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum
-                            possimus provident, illo quaerat, nesciunt quidem, perspiciatis repudiandae sapiente
-                            consequuntur hic consequatur? Velit, soluta nisi repellendus voluptatem odit neque. Alias.
-                        </h4>
-                    </div>
-                    <div class="part-end"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi
-                        placeat vel consectetur
-                        ab fuga optio beatae ex pariatur repellat, sapiente error quos, corrupti minima architecto est
-                        iure,
-                        dignissimos sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum
-                        possimus provident, illo quaerat, nesciunt quidem, perspiciatis repudiandae sapiente
-                        consequuntur hic consequatur? Velit, soluta nisi repellendus voluptatem odit neque. Alias.
-                    </div>
-                </div>
-            </div>
-            <div class="comments">
-                <div class="comments-line">Коментарі</div>
-                <form method="POST">
-                    <textarea name="your-coment" cols="30" rows="2" placeholder="напиши шось..." required></textarea>
-                    <br>
-                    <input type="submit" value="Відправити">
-                </form>
-            </div>
+        <article class="art-news">
         </article>
     </main>
 
@@ -112,6 +67,23 @@
             <a href="login.html">login</a>
         </div>
     </footer>
+
+    
+    <script src="js/index.js"></script>
+    <script src="js/news-pol.js"></script>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-4c91a91a-96f2-48db-9d46-d2bc5e81f747"></div>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v9.0"
+        nonce="oHLQeBvl"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
 
 </body>
 
